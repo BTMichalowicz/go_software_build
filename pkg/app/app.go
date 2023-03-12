@@ -5,7 +5,7 @@
 
 package app
 
-import "github.com/gvallee/go_software_build/internal/pkg/autotools"
+import "github.com/BTMichalowicz/go_software_build/internal/pkg/autotools"
 
 type SourceCode struct {
 	// URL is the url to use to download the app

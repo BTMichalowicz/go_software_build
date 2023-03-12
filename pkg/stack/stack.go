@@ -17,9 +17,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gvallee/go_software_build/internal/pkg/module"
-	"github.com/gvallee/go_software_build/pkg/builder"
-	"github.com/gvallee/go_util/pkg/util"
+	"github.com/BTMichalowicz/go_software_build/internal/pkg/module"
+	"github.com/BTMichalowicz/go_software_build/pkg/builder"
+	"github.com/BTMichalowicz/go_util/pkg/util"
 )
 
 type StackCfg struct {

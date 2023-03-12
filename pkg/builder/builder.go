@@ -15,11 +15,11 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/gvallee/go_exec/pkg/advexec"
-	"github.com/gvallee/go_software_build/internal/pkg/autotools"
-	"github.com/gvallee/go_software_build/pkg/app"
-	"github.com/gvallee/go_software_build/pkg/buildenv"
-	"github.com/gvallee/go_util/pkg/util"
+	"github.com/BTMichalowicz/go_exec/pkg/advexec"
+	"github.com/BTMichalowicz/go_software_build/internal/pkg/autotools"
+	"github.com/BTMichalowicz/go_software_build/pkg/app"
+	"github.com/BTMichalowicz/go_software_build/pkg/buildenv"
+	"github.com/BTMichalowicz/go_util/pkg/util"
 )
 
 // GetConfigureExtraArgsFn is the function prootype for getting extra arguments to configure a software

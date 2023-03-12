@@ -15,8 +15,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gvallee/go_software_build/pkg/app"
-	"github.com/gvallee/go_util/pkg/util"
+	"github.com/BTMichalowicz/go_software_build/pkg/app"
+	"github.com/BTMichalowicz/go_util/pkg/util"
 )
 
 func checkResultBuildEnv(testEnv Info, expectedEnv Info, t *testing.T) {
@@ -84,7 +84,7 @@ func TestDirURLGet(t *testing.T) {
 func getHelloWorldSrc(t *testing.T) (*Info, *app.Info) {
 	a := new(app.Info)
 	a.Name = "helloworld"
-	a.Source.URL = "https://github.com/gvallee/c_hello_world/archive/1.0.0.tar.gz"
+	a.Source.URL = "https://github.com/BTMichalowicz/c_hello_world/archive/1.0.0.tar.gz"
 	a.Version = "1.0.0"
 
 	testEnv := new(Info)
@@ -106,7 +106,7 @@ func getHelloWorldSrc(t *testing.T) (*Info, *app.Info) {
 func getHelloWorldGit(t *testing.T) (*Info, *app.Info) {
 	a := new(app.Info)
 	a.Name = "c_hello_world"
-	a.Source.URL = "git@github.com:gvallee/c_hello_world.git"
+	a.Source.URL = "git@github.com:BTMichalowicz/c_hello_world.git"
 	a.Source.Branch = "test"
 	a.Version = "1.0.0"
 

@@ -20,9 +20,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gvallee/go_exec/pkg/advexec"
-	"github.com/gvallee/go_software_build/pkg/app"
-	"github.com/gvallee/go_util/pkg/util"
+	"github.com/BTMichalowicz/go_exec/pkg/advexec"
+	"github.com/BTMichalowicz/go_software_build/pkg/app"
+	"github.com/BTMichalowicz/go_util/pkg/util"
 )
 
 const (

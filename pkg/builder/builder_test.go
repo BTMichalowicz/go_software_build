@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/gvallee/go_exec/pkg/advexec"
-	"github.com/gvallee/go_util/pkg/util"
+	"github.com/BTMichalowicz/go_exec/pkg/advexec"
+	"github.com/BTMichalowicz/go_util/pkg/util"
 )
 
 func setBuilder(t *testing.T) (*Builder, func()) {
@@ -61,7 +61,7 @@ func TestInstallFromAutotoolsRelease(t *testing.T) {
 	t.Logf("Build directory: %s", b.Env.BuildDir)
 	t.Logf("Source directory: %s", b.Env.SrcDir)
 	b.App.Name = "c_hello_world"
-	b.App.Source.URL = "https://github.com/gvallee/c_hello_world/releases/download/v1.0.1/c_hello_world-1.0.1.tar.gz"
+	b.App.Source.URL = "https://github.com/BTMichalowicz/c_hello_world/releases/download/v1.0.1/c_hello_world-1.0.1.tar.gz"
 	b.App.Version = "1.0.1"
 
 	err := b.Load(false)
@@ -92,7 +92,7 @@ func TestBuilderEnv(t *testing.T) {
 	t.Logf("Build directory: %s", b.Env.BuildDir)
 	t.Logf("Source directory: %s", b.Env.SrcDir)
 	b.App.Name = "helloworld"
-	b.App.Source.URL = "https://github.com/gvallee/c_hello_world/archive/1.0.0.tar.gz"
+	b.App.Source.URL = "https://github.com/BTMichalowicz/c_hello_world/archive/1.0.0.tar.gz"
 	b.App.Version = "1.0.0"
 	b.Env.Env = append(b.Env.Env, "CC=/dummy/toto")
 
@@ -118,7 +118,7 @@ func TestInstallFromSource(t *testing.T) {
 	t.Logf("Build directory: %s", b.Env.BuildDir)
 	t.Logf("Source directory: %s", b.Env.SrcDir)
 	b.App.Name = "helloworld"
-	b.App.Source.URL = "https://github.com/gvallee/c_hello_world/archive/1.0.0.tar.gz"
+	b.App.Source.URL = "https://github.com/BTMichalowicz/c_hello_world/archive/1.0.0.tar.gz"
 	b.App.Version = "1.0.0"
 
 	err := b.Load(false)
@@ -143,7 +143,7 @@ func TestInstallFromSource(t *testing.T) {
 }
 
 func TestPersistentBuildFromLocalTarball(t *testing.T) {
-	url := "https://github.com/gvallee/c_hello_world/archive/1.0.0.tar.gz"
+	url := "https://github.com/BTMichalowicz/c_hello_world/archive/1.0.0.tar.gz"
 	tarballFilename := "1.0.0.tar.gz"
 	wgetBin, err := exec.LookPath("wget")
 	if err != nil {
